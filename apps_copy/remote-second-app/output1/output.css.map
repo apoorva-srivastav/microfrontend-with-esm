@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/App.css"],
-  "sourcesContent": [".app-b {\n  color: #7c3aed;\n}\n"],
-  "mappings": ";AAAA,CAAC;AACC,SAAO;AACT;",
-  "names": []
-}
