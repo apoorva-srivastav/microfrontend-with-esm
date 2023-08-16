@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/CounterComponent.jsx", "../src/App.jsx", "../src/MicroFrontend.jsx"],
+  "sourcesContent": ["\n\nexport const Counter = ({setCount, count}) => {\n    \n\n    return(\n        <><button onClick={() => setCount(count + 1)}>Click here</button><p>{count}</p></>\n    )\n}", "\nimport \"./App.css\";\nimport { Counter } from \"./CounterComponent\";\n\nconst App = () => {\n  const [count, setCount] = React.useState(0)\n  return (\n  <section className='app-b'>\n    <h3>This is a second remote app</h3>\n    <Counter count={count} setCount={setCount}/>\n  </section>\n)\n  };\n\nexport default App;\n", "\nimport App from \"./App\";\n\nconst MicroFrontend = () => <App />;\n\nexport default MicroFrontend;\n"],
+  "mappings": ";AAEO,IAAM,UAAU,CAAC,EAAC,UAAU,MAAK,MAAM;AAG1C,SACI,0DAAE,oCAAC,YAAO,SAAS,MAAM,SAAS,QAAQ,CAAC,KAAG,YAAU,GAAS,oCAAC,WAAG,KAAM,CAAI;AAEvF;;;ACJA,IAAM,MAAM,MAAM;AAChB,QAAM,CAAC,OAAO,QAAQ,IAAI,MAAM,SAAS,CAAC;AAC1C,SACA,oCAAC,aAAQ,WAAU,WACjB,oCAAC,YAAG,6BAA2B,GAC/B,oCAAC,WAAQ,OAAc,UAAmB,CAC5C;AAEA;AAEF,IAAO,cAAQ;;;ACXf,IAAM,gBAAgB,MAAM,oCAAC,iBAAI;AAEjC,IAAO,wBAAQ;",
+  "names": []
+}
