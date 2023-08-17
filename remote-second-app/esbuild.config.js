@@ -1,7 +1,7 @@
 const esbuild = require("esbuild");
-// const {sassPlugin} = require("esbuild-sass-plugin");
+ const {sassPlugin} = require("esbuild-sass-plugin");
 
-esbuild.buildSync({
+esbuild.build({
     entryPoints: ['src/MicroFrontend.jsx'],
     bundle: true,
     minify: false,
@@ -9,7 +9,7 @@ esbuild.buildSync({
     sourcemap: true,
     outfile: 'dist/output.js',
     external: ['react', 'react-dom'],
-  //   plugins: [
-  //     sassPlugin({type: "style"}),
-  // ],
+    plugins: [
+      sassPlugin({type: "style"}),
+  ],
   })
